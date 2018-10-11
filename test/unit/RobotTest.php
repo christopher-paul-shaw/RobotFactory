@@ -7,13 +7,13 @@ use PHPUnit\Framework\TestCase;
 class RobotTest extends TestCase {
 	
 	public function testICanCreateFactory () {
-       		$factory = new RobotFactory();
+		$factory = new RobotFactory();
 		$robot = $factory->createRobot();
 	 	$this->assertInstanceOf(Robot::class, $robot);
     	}
 	
 	public function testICanSetNames () {
-       		$factory = new RobotFactory();
+		$factory = new RobotFactory();
 		$robot = $factory->createRobot();
 		
 		$name = "Robert";
